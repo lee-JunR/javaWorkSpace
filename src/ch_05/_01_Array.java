@@ -11,6 +11,25 @@ public class _01_Array {
 
         // 배열 선언 2번째 방법
         String coffeeArr2[] = new String[4];
-        coffeeArr1[] = "아메리카노","";
+
+        // 배열 값 초기화
+//        coffeeArr1[0] = "아메리카노";
+//        coffeeArr1[1] = "카페모카";
+//        coffeeArr1[2] = "라떼";
+//        coffeeArr1[3] = "카푸치노";
+
+        // 배열 선언 3번째 방법 + 초기화
+        String[] coffeeArr3 = new String[] {"아메리카노", "카페모카", "라떼", "카푸치노"};
+
+        // 배열 선언 4번째 방법 + 초기화
+        String[] coffeeArr4 = {"아메리카노", "카페모카", "라떼", "카푸치노"};
+
+
+        //커피 주문
+        System.out.println(coffeeArr4[0] + " 하나 주세요");
+        coffeeArr4[0] = "에스프레소"; // 값 변경
+        System.out.println("아 아니다 " + coffeeArr4[0] + " 하나 주세요");
+
+
     }
 }
