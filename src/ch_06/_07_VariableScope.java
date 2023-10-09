@@ -2,7 +2,8 @@ package ch_06;
 
 public class _07_VariableScope {
     public static int variableTest(){
-        return regioinVariable01;  // 오류 발생
+//        return regioinVariable01;  // 오류 발습
+        return 1;
     }
     public static void main(String[] args) {
         // 변수의 범위
