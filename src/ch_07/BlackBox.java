@@ -34,4 +34,21 @@ public class BlackBox {
         }
         return 10;
     }
+
+    /** 05_MethodOverloading 강의에서 제작한 함수 show : 보여줄지 말지 결정, int 블랙박스 시간 몇분 단위로 끊어서 기록할지*/
+    void record(boolean showDataTime, boolean showSpeed, int min){
+        System.out.println("녹화를 시작합니다.");
+        if(showDataTime){
+            System.out.println("영상에 날짜 정보가 표시됩니다.");
+        }
+        if(showSpeed){
+            System.out.println("영상에 속도 정보가 표시됩니다.");
+        }
+        System.out.println("영상은 " + min + "분 단위로 표시됩니다.");
+    }
+
+    /** 05_MethodOverloading 강의에서 제작한 함수 record 함수를 오버로딩해서 기본값을 정의함.*/
+    void record(){
+        record(true, true, 5);
+    }
 }
