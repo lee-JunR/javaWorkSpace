@@ -6,9 +6,27 @@ public class BlackBox {
     String resolution; // 해상도
     int price; // 가격
     String color; // 색상
+    int serialNumber; // 시리얼 번호
 
     static boolean canAutoReport = false; //자동 신고 기능 클래스로부터 만들어지는 모든 객체에 똑같이 적용!
+    static int counter = 0; // 시리얼 번호를 생성해주는 역할
 
+    /** 08_Constructor 강의에서 생성한 생성자*/
+    BlackBox(){
+        //객체 생성시 자동으로 호출되는 메소드
+        System.out.println("기본 생성자 호출");
+        this.serialNumber  = ++counter; //생성자 호출될때마다 serialNumber+=1
+        System.out.println("새로운 시리얼 넘버를 호출 받았습니다.");
+    }
+    /** 08_Constructor 강의에서 생성한 생성자를 메소드 오버로딩*/
+    BlackBox(String modelName, String resolution, int price, String color){
+        this(); // BlackBox의 동작을 수행하고 나서 호출됨!!
+        System.out.println("사용자 정의 생성자 호출");
+        this.modelName = modelName;
+        this.resolution = resolution;
+        this.price = price;
+        this.color = color;
+    }
     /** 04_Method 강의 에서 제작한 신고 지원 확인 함수 */
     void autoReport(){
         if (canAutoReport){
