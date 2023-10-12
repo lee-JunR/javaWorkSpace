@@ -51,4 +51,11 @@ public class BlackBox {
     void record(){
         record(true, true, 5);
     }
+
+    /** 06_ClassMethod 에서 제작한 스테틱 함수 static으로 정의하면 인스턴스가 달라도 같은 동작 실행 */
+    static void callServiceCenter(){
+        System.out.println("서비스 센터(1588-0000)로 연결합니다.");
+//        modelName = "test"; 인스턴스 변수는 개체가 만들어져야만들어지는 인스턴스 변수이기 때문에 사용 불가
+        canAutoReport = false; // 스태틱 변수는 객체 생성 전에도 만들어져 있어 사용 가능
+    }
 }
