@@ -58,4 +58,8 @@ public class BlackBox {
 //        modelName = "test"; 인스턴스 변수는 개체가 만들어져야만들어지는 인스턴스 변수이기 때문에 사용 불가
         canAutoReport = false; // 스태틱 변수는 객체 생성 전에도 만들어져 있어 사용 가능
     }
+
+    public void appendModelName(String modelName) {
+        this.modelName += modelName; // 전달값 변수와 클래스 내의 인스턴스 변수가 같은 경우 this. 붙여 인스턴스 변수라는 것을 알려줌
+    }
 }
