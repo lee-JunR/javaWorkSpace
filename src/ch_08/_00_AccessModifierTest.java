@@ -1,6 +1,6 @@
 package ch_08;
 
-import ch_07.BlackBoxRefurbish;
+import ch_07.BlackBoxRefurbish; // 다른 패키지.클래스 를 사용하겠다는 의미! ch_07.* : ch_07 패키지의 모든 클래스를 사용하겠다.
 
 /** ch_07 / 10_접근제어자 실습을 위한 클래스입니다. */
 public class
