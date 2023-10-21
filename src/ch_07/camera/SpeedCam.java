@@ -1,9 +1,18 @@
 package ch_07.camera;
+// SpeedCam is a Camera -> is a 관계 성립!
 
-public class SpeedCam extends Camera{ // 자식 클래스
+public class SpeedCam extends Camera{
   public SpeedCam() {
-    this.name = "과속단속 카메라";
+    // this.name = "과속단속 카메라";
+    super("과속단속 카메라");
   }
+  // 자식 클래스
+  public void takePicture() {
+    super.takePicture(); // super 를 통해 super 클래스에 접근.
+    recognizeLicensePlate();
+    checkSpeed();
+  }
+
   public void checkSpeed() {
     // 속도 확인
     System.out.println("속도를 측정합니다");

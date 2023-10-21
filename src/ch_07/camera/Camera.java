@@ -1,10 +1,15 @@
 package ch_07.camera;
 // _12_상속 에서 생성한 클래스입니다.
+
 public class Camera { // 부모 클래스
   public String name;
 
   public Camera() {
-    this.name = "카메라";
+    this("카메라");
+  }
+
+  protected Camera(String name) { // protected : 자식 클래스에서 접근 가능
+    this.name = name;
   }
 
   public void takePicture() {
