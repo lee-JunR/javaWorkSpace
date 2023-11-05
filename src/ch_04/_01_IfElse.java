@@ -18,3 +18,5 @@ public class _01_IfElse {
         System.out.println("커피 주문 완료 #1");
     }
 }
+
+// else 의 사용은 지양하는 것이 좋다 메소드의 indent(tab으로 띄워쓰는거)는 3 이상을 넘어가지 않고 구현 가능.

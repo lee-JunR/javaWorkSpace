@@ -21,3 +21,14 @@ public class _05_VariableNaming {
         final String CODE = "kr";
     }
 }
+
+// 변수 이름 규칙
+// 1. 변수, 클래스 명에는 명사를 짓는다. log (X) logger(O)
+// 2. 함수명에는 동사를 넣는다. feature(X) getFeature(O)
+// 3. 변수명에는 전치사 생략! "to" 는 때때로 괜찮다.
+// 4. 단수와 복수 구분 item, items
+// 5. 사용하는 언어의 암묵적인 Rule을 지킨다.
+//          CamelCase: Java
+//          snake_cake: c
+//          Hybrid: python
+// 6. 상수는 대문자

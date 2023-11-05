@@ -9,3 +9,4 @@ public class _05_Operator5 {
         int max = ( x > y ) ? x : y; //x > y 가 true 면 x 결괏값 false 이면 y 자리 결괏값으로
     }
 }
+// 삼항 연산자 사용법 대한 정리 : https://tpgns.github.io/2018/04/24/nested-ternaries-are-great/

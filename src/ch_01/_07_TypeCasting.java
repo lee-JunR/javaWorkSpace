@@ -2,12 +2,17 @@ package ch_01;
 
 public class _07_TypeCasting {
     public static void main(String[] args) {
-        //TypeCasting : 형변환
+
+        // TypeCasting : 형변환
+        // Auto TypeCasting : 자동 형변환
+
+        // int -> double, float
         int score = 93;
         System.out.println(score);
         System.out.println((float) score);
         System.out.println((double) score);
 
+        // 실수 -> int
         float score_f = 94.3F;
         double score_d = 98.8;
         System.out.println((int)score_f);

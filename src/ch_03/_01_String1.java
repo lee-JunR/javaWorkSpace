@@ -1,7 +1,5 @@
 package ch_03;
 
-import java.util.Locale;
-
 public class _01_String1 {
     public static void main(String[] args) {
         String s = "I like Java and Python and C";
@@ -22,3 +20,5 @@ public class _01_String1 {
         System.out.println(s.endsWith("c"));            // 이 문자열로 끝나면 true
     }
 }
+
+// 자바 기본 API 를 많이 아는것은 아주 큰 장점. String은 특히 많이 다루니깐 알아두자.
