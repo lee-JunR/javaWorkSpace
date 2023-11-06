@@ -1,4 +1,4 @@
-package Detector;
+package ch_08.Detector;
 
 public class FireDetector implements Detectable {
 

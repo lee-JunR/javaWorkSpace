@@ -1,11 +1,11 @@
 package ch_08;
 
-import Detector.AdvancedFireDetector;
-import Detector.Detectable;
-import Detector.FireDetector;
-import Reporter.NormalReporter;
-import Reporter.Reportable;
-import Reporter.VedioRepoter;
+import ch_08.Detector.AdvancedFireDetector;
+import ch_08.Detector.Detectable;
+import ch_08.Detector.FireDetector;
+import ch_08.Reporter.NormalReporter;
+import ch_08.Reporter.Reportable;
+import ch_08.Reporter.VedioRepoter;
 import ch_08.Camera.FactoryCam;
 
 public class _02_Interface {

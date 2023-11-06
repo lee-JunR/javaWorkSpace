@@ -1,4 +1,4 @@
-package Reporter;
+package ch_08.Reporter;
 
 public class VedioRepoter implements Reportable {
 

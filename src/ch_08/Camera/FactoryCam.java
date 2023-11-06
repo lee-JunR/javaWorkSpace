@@ -1,7 +1,7 @@
 package ch_08.Camera;
 
-import Detector.Detectable;
-import Reporter.Reportable;
+import ch_08.Detector.Detectable;
+import ch_08.Reporter.Reportable;
 
 public class FactoryCam extends Camera implements Detectable, Reportable {
 
