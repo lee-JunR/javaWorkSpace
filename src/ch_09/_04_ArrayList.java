@@ -1,6 +1,7 @@
 package ch_09;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class _04_ArrayList {
@@ -13,6 +14,20 @@ public class _04_ArrayList {
     // Array List
     // 1.  선언
     ArrayList<String> list = new ArrayList<>();
+
+    // 1-1
+      // 방법 1. 값을 직접 입력하여 전달
+    ArrayList<String> strArrayList1 =
+        new ArrayList<>(Arrays.asList("One", "Two", "Three"));
+
+      // 방법 2. 배열로 선언된 변수를 전달
+//    ArrayList<String> strArrayList2 =
+//        new ArrayList<>(Arrays.asList(strArray));
+
+      // 방법 3. ArrayList 객체를 전달(Arrays.asList() 사용 안함)
+    ArrayList<String> strArrayList3 =
+        new ArrayList<>(strArrayList1);
+
     // 2. 데이터 추가
     list.add("유재석");
     list.add("조세호");
